@@ -1,0 +1,79 @@
+.Hangman {
+  text-transform: uppercase;
+}
+
+.Hangman h1 {
+  font-size: 2.5rem;
+}
+
+.Hangman img {
+  border: 8px solid white;
+  width: 200px;
+  background-color: white;
+}
+
+.Hangman-word {
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.Hangman-buttons {
+  width: 85%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.Hangman button {
+  font-family: inherit;
+  text-transform: inherit;
+  height: 2rem;
+  width: 2rem;
+  margin: 0.2rem 0.075rem;
+  border: 0;
+  border-radius: 0.2rem;
+  background-color: slateblue;
+  box-shadow: 0 0.25rem 0 0 darkslateblue;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.Hangman-buttons button:hover {
+  cursor: pointer;
+  background-color: darkslateblue;
+}
+
+.Hangman-buttons button:disabled {
+  background-color: gray;
+  box-shadow: 0 0.25rem 0 0 dimgray;
+}
+
+#Hangman-restart {
+  width: auto;
+  height: auto;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  letter-spacing: 0.08rem;
+}
+
+#Hangman-restart:hover {
+  cursor: pointer;
+  background-color: #545f6b;
+}
+
+.Hangman-win,
+.Hangman-lose {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  /*Need to reset margin because <p> tag has margin in em, 
+  so larger font-size will increase the margin also which makes it look ugly*/
+}
+
+.Hangman-win {
+  color: blue;
+}
+
+.Hangman-lose {
+  color: maroon;
+}
