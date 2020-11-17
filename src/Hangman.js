@@ -23,7 +23,6 @@ class Hangman extends Component {
       guessedLetters: new Set(),
       word: randomChoice(ENGLISH_WORDS),
     };
-    // this.getCurrWord = this.getCurrWord.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.restartGame = this.restartGame.bind(this);
   }
@@ -81,7 +80,7 @@ class Hangman extends Component {
         {!won && !gameOver && (
           <>
             <p>
-              {this.props.numGuesses - this.state.numWrongGuesses} attemps left
+              {this.props.numGuesses - this.state.numWrongGuesses} attempts left
             </p>
             <p className="Hangman-buttons">{this.generateButtons()}</p>
           </>
